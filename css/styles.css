@@ -1,6 +1,7 @@
 :root {
   --navy-blue: #2e2f42;
   --slate: #434455;
+  --ocean: #404bbf;
 }
 
 body {
@@ -13,6 +14,7 @@ h4,
 h5,
 h6,
 ul,
+svg,
 p {
   margin: 0;
   padding: 0;
@@ -94,7 +96,7 @@ p {
 }
 
 .nav-active {
-  color: #404bbf;
+  color: var(--ocean);
 }
 .nav-right,
 .desc-second-section,
@@ -117,7 +119,11 @@ p {
 }
 
 .hero-sec {
-  background-color: var(--navy-blue);
+  /* background: #2e2f42b2; */
+  background: linear-gradient(#2e2f42b2, #2e2f42b2),
+    url("../images/hero-bgjpg.jpg");
+  /* background-size: auto auto; */
+  background-repeat: no-repeat;
   padding: 188px 0;
 }
 
@@ -159,7 +165,7 @@ p {
 }
 
 .btn-studio-mid:hover {
-  background-color: #404bbf;
+  background-color: var(--ocean);
 }
 
 .second-list {
@@ -172,6 +178,7 @@ p {
 .second-list-gap {
   margin-top: 24px;
   margin-left: 24px;
+  width: 264px;
 }
 .third-sec {
   /* margin-top: -120px; */
@@ -282,14 +289,14 @@ p {
 
 .btn-portfolio:hover {
   color: white;
-  background-color: #404bbf;
-  border: 1px solid #404bbf;
+  background-color: var(--ocean);
+  border: 1px solid var(--ocean);
 }
 
 .btn-portfolio-active {
   color: white;
-  background-color: #404bbf;
-  border: 1px solid #404bbf;
+  background-color: var(--ocean);
+  border: 1px solid var(--ocean);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
@@ -340,6 +347,79 @@ p {
   border-top: none;
 }
 
+/* ============================ Team Card SVG ================================*/
+
+.social-icon-list {
+  margin-top: 8px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  cursor: pointer;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+
+  padding: 10px 0;
+  fill: #f4f4fd;
+}
+
+.social-icon:hover {
+  background-color: var(--ocean);
+}
+
+/* ============================ Team Card SVG ================================*/
+
+/* ============================ ADVANTAGE SVG ================================*/
+.advantage-icon {
+  width: 264px;
+  height: 112px;
+  padding: 24px 100px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+/* ============================ ADVANTAGE SVG ================================*/
+
+/* ============================ CUSTOMERS SVG ================================*/
+
+.customers-icon-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  /* margin-top: -24px;
+  margin-left: -24px; */
+  gap: 24px;
+}
+
+.customer-icon-gap {
+  /* margin-top: 24px;
+  margin-left: 24px; */
+}
+
+.customer-icon {
+  width: 168px;
+  height: 88px;
+  padding: 16px 32px;
+  fill: #8e8f99;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  cursor: pointer;
+}
+
+.customer-icon:hover {
+  border: 1px solid var(--ocean);
+  stroke: var(--ocean);
+  /* fill doesnt work */
+  fill: var(--ocean);
+}
+
+/* ============================ CUSTOMERS SVG ================================*/
 /* global styles footer */
 
 .footer-setting {
@@ -361,4 +441,25 @@ p {
 
 .footer-logo-span {
   color: #4d5ae5;
+}
+
+.footer-flex {
+  display: flex;
+  gap: 120px;
+  align-items: flex-start;
+}
+
+.footer-social-icon-gap {
+  gap: 16px;
+}
+
+.footer-socialmedia {
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+
+.footer-social-icon:hover {
+  background-color: #31d0aa;
 }
