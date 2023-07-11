@@ -287,10 +287,13 @@ p {
   margin-left: 24px;
 }
 
-.btn-portfolio:hover {
+.btn-portfolio:hover,
+.btn-portfolio:focus {
   color: white;
   background-color: var(--ocean);
   border: 1px solid var(--ocean);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .btn-portfolio-active {
@@ -329,10 +332,18 @@ p {
 
 .projects-card-container {
   display: flex;
-  padding: 0px 0px 32px 0px;
+  /* padding: 0px 0px 32px 0px; */
   flex-direction: column;
   flex-shrink: 0;
   background: var(--white, #fff);
+  cursor: pointer;
+  margin-bottom: 48px;
+}
+
+.projects-card-container:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .projects-card-content {
@@ -368,7 +379,8 @@ p {
   fill: #f4f4fd;
 }
 
-.social-icon:hover {
+.social-icon:hover,
+.social-icon:focus {
   background-color: var(--ocean);
 }
 
@@ -412,7 +424,8 @@ p {
   cursor: pointer;
 }
 
-.customer-icon:hover {
+.customer-icon:hover,
+.customer-icon:focus {
   border: 1px solid var(--ocean);
   stroke: var(--ocean);
   /* fill doesnt work */
@@ -425,6 +438,10 @@ p {
 .footer-setting {
   background-color: var(--navy-blue);
   padding: 100px 0;
+}
+
+.footer-setting-margin {
+  margin-top: -48px;
 }
 
 .footer-logo {
@@ -460,6 +477,7 @@ p {
   margin-bottom: 16px;
 }
 
-.footer-social-icon:hover {
+.footer-social-icon:hover,
+.footer-social-icon:focus {
   background-color: #31d0aa;
 }
