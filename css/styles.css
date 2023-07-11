@@ -124,6 +124,8 @@ p {
     url("../images/hero-bgjpg.jpg");
   /* background-size: auto auto; */
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 188px 0;
 }
 
@@ -369,18 +371,20 @@ p {
   cursor: pointer;
 }
 
-.social-icon {
+.social-icon-link {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
+  padding: 12px;
+}
 
-  padding: 10px 0;
+.social-icon {
   fill: #f4f4fd;
 }
 
-.social-icon:hover,
-.social-icon:focus {
+.social-icon-link:hover,
+.social-icon-link:focus {
   background-color: var(--ocean);
 }
 
@@ -393,7 +397,6 @@ p {
   padding: 24px 100px;
   background-color: #f4f4fd;
   border-radius: 4px;
-  /* object-fit: contain; */
   margin-bottom: 8px;
 }
 /* ============================ ADVANTAGE SVG ================================*/
@@ -409,26 +412,27 @@ p {
   gap: 24px;
 }
 
-.customer-icon-gap {
-  /* margin-top: 24px;
-  margin-left: 24px; */
-}
-
-.customer-icon {
+.customer-icon-link {
   width: 168px;
   height: 88px;
   padding: 16px 32px;
-  fill: #8e8f99;
-  border-radius: 4px;
   border: 1px solid #8e8f99;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.customer-icon:hover,
-.customer-icon:focus {
+.customer-icon {
+  fill: #8e8f99;
+}
+
+.customer-icon-link:hover,
+.customer-icon-link:focus {
   border: 1px solid var(--ocean);
-  stroke: var(--ocean);
-  /* fill doesnt work */
+}
+
+/* hovering the parent the child while change also */
+.customer-icon-link:hover .customer-icon,
+.customer-icon-link:focus .customer-icon {
   fill: var(--ocean);
 }
 
@@ -475,6 +479,10 @@ p {
   font-weight: 500;
   letter-spacing: 0.32px;
   margin-bottom: 16px;
+}
+
+.footer-social-icon {
+  padding: 8px;
 }
 
 .footer-social-icon:hover,
