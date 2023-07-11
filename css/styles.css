@@ -393,7 +393,7 @@ p {
   padding: 24px 100px;
   background-color: #f4f4fd;
   border-radius: 4px;
-  object-fit: contain;
+  /* object-fit: contain; */
   margin-bottom: 8px;
 }
 /* ============================ ADVANTAGE SVG ================================*/
