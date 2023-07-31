@@ -95,17 +95,28 @@ p {
   margin-left: 40px;
 }
 
+.nav-bar:hover {
+  color: #4d5ae5;
+}
+
 .nav-active {
   color: var(--ocean);
 }
 .nav-right,
 .desc-second-section,
-.team-title,
 .projects-desc {
   font-size: 16px;
   line-height: 1.5;
   color: var(--slate);
   letter-spacing: 0.32px;
+}
+
+.team-title {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--slate);
+  letter-spacing: 0.32px;
+  margin-bottom: 8px;
 }
 
 .nav-right-decor {
@@ -341,8 +352,19 @@ p {
   cursor: pointer;
   margin-bottom: 48px;
 }
-
+/* 
 .projects-card-container:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+} */
+.project-link {
+  text-decoration: none;
+}
+
+.project-link:hover,
+.project-link:focus,
+.project-link:active {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -363,7 +385,8 @@ p {
 /* ============================ Team Card SVG ================================*/
 
 .social-icon-list {
-  margin-top: 8px;
+  /* margin-top: -24px;
+  margin-left: -24px; */
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -374,9 +397,13 @@ p {
 .social-icon-link {
   width: 40px;
   height: 40px;
+  /* margin-top: 24px;
+  margin-left: 24px; */
   border-radius: 50%;
   background-color: #4d5ae5;
-  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-icon {
@@ -392,9 +419,15 @@ p {
 
 /* ============================ ADVANTAGE SVG ================================*/
 .advantage-icon {
+  padding: 24px 100px;
+}
+
+.advantage-icon-container {
   width: 264px;
   height: 112px;
-  padding: 24px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
@@ -415,7 +448,12 @@ p {
 .customer-icon-link {
   width: 168px;
   height: 88px;
-  padding: 16px 32px;
+  /* margin-top: 24px;
+  margin-left: 24px; */
+  /* padding: 16px 32px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   cursor: pointer;
@@ -479,10 +517,6 @@ p {
   font-weight: 500;
   letter-spacing: 0.32px;
   margin-bottom: 16px;
-}
-
-.footer-social-icon {
-  padding: 8px;
 }
 
 .footer-social-icon:hover,
